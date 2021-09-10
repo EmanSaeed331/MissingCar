@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "3580879336",
+    "firebase_url": "https://mising-c9562.firebaseio.com",
+    "project_id": "mising-c9562",
+    "storage_bucket": "mising-c9562.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3580879336:android:084ef6d9421d3dc8",
+        "android_client_info": {
+          "package_name": "com.example.win10.missing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3580879336-btpuiabsekf53nidkv7nt3i4jv84rv40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBns5IBCx1J_SXsXvJrTi_dyg91Bxr2DUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

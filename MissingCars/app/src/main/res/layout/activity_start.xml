@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win10.missing.StartActivity"
+    android:background="@drawable/login">
+
+    <Button
+        android:id="@+id/Already_have_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="193dp"
+        android:width="300dp"
+        android:background="@color/colorPrimary"
+        android:text="Already have an account"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/need_new_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Already_have_account_button"
+        android:layout_alignTop="@+id/Already_have_account_button"
+        android:layout_marginTop="82dp"
+        android:width="300dp"
+        android:background="@color/colorPrimary"
+        android:text="Need a new account"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+</RelativeLayout>

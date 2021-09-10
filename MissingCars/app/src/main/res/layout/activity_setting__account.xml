@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win10.missing.Setting_AccountActivity"
+    android:background="@color/colorPrimary"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setting_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:foregroundGravity="center"
+        android:maxWidth="200dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/setting_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:width="200dp"
+        android:gravity="center"
+        android:text="User Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/setting_user_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/setting_user_name"
+        android:layout_below="@+id/setting_user_name"
+        android:layout_marginTop="21dp"
+        android:width="200dp"
+        android:gravity="center"
+        android:text="User Statues"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/change_user_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Change_user_statues"
+        android:layout_alignStart="@+id/setting_user_statues"
+        android:width="200dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:gravity="center"
+        android:text="change Image"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/Change_user_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/change_user_profile"
+        android:layout_marginBottom="42dp"
+        android:width="200dp"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:text="change Statues"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

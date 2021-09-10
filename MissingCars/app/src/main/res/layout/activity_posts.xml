@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win10.missing.postsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <include
+        android:id="@+id/all_users_app_par"
+        layout="@layout/app_bar_layout"
+        android:layout_above="@+id/addbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="552dp"
+        android:layout_marginEnd="22dp"
+        tools:ignore="NotSibling">
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/all_users_app_par"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageButton4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            tools:layout_width="350dp">
+
+
+            <EditText
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="type now ...."
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/color"
+                app:layout_constraintVertical_bias="0.019"
+                tools:ignore="UnknownId" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/des"
+                android:width="300dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/number"
+                android:ems="10"
+                android:hint="place"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/color"
+                app:layout_constraintVertical_bias="0.019"
+                tools:ignore="UnknownId" />
+
+            <EditText
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/number"
+                android:layout_marginTop="45dp"
+                android:ems="10"
+                android:hint="color"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="461dp" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ic_action_adbtn"
+            tools:ignore="NotSibling"
+            tools:layout_height="200dp"
+            tools:layout_width="350dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:width="10dp"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_action_pos4"
+            android:src="@drawable/ic_action_pos2"
+            app:fabSize="normal">
+
+
+        </android.support.design.widget.FloatingActionButton>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

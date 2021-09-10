@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.design.widget.TabLayout>
+</android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="11dp"
+        android:layout_weight="1"
+        android:width="10dp"
+        android:drawableRight="@drawable/ic_action_pos"
+        android:src="@drawable/ic_action_pos2"
+        app:fabSize="normal">
+
+
+    </android.support.design.widget.FloatingActionButton>
+
+    <EditText
+        android:id="@+id/coloredittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carimg"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Color"
+        android:inputType="textMultiLine"
+        tools:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/placeedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addbtn"
+        android:layout_below="@+id/coloredittext"
+        android:ems="10"
+        android:hint="place"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/numberedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/placeedittext"
+        android:ems="10"
+        android:hint="number"
+        android:inputType="textMultiLine|number" />
+
+    <ImageButton
+        android:id="@+id/carimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/profile"
+        tools:layout_width="400dp" />
+
+</RelativeLayout>

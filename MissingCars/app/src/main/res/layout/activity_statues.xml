@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win10.missing.StatuesActivity">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/statues_app_bar">
+
+    </include>
+
+    <EditText
+        android:id="@+id/statues_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statues_app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:width="50dp"
+        android:ems="10"
+        android:hint="Change the statues here"
+        android:inputType="textMultiLine"
+        android:paddingBottom="30dp" />
+
+    <Button
+        android:id="@+id/save_statues_changes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statues_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:width="200dp"
+        android:background="@color/colorPrimary"
+        android:text="Save changes"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context="com.example.win10.missing.ProfileActivity">
+
+    <include
+        android:id="@+id/all_users_app_par"
+        layout="@layout/app_bar_layout" >
+      <!--  android:layout_alignEnd="@+id/stateProf"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="40dp"-->
+
+
+    </include>
+  <!--  <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/all_users_app_par"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:foregroundGravity="center"
+        android:maxWidth="200dp"
+        android:src="@drawable/profile" />-->
+
+    <TextView
+        android:id="@+id/nameProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_width="192dp" />
+
+    <TextView
+        android:id="@+id/stateProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameProf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:width="150dp"
+        android:layoutDirection="ltr"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        tools:layout_width="192dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/profileImg"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="@android:dimen/thumbnail_height"
+
+        android:layout_below="@+id/all_users_app_par"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:foregroundGravity="center"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        android:src="@drawable/profile" />
+
+    <Button
+        android:id="@+id/open_chat_btn"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stateProf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_color"
+        android:padding="0dp"
+        android:text="send message"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
